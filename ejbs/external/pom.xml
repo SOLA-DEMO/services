@@ -11,5 +11,12 @@
     <packaging>ejb</packaging>
     <version>1.2-SNAPSHOT</version>
     <name>EJB External</name>
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>sola-administrative</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 </project>
 

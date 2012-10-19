@@ -66,6 +66,11 @@
                             <groupId>${project.groupId}.ejbs</groupId>
                             <artifactId>sola-transaction</artifactId>
                         </ejbModule>
+                        <ejbModule>
+                            <groupId>${project.groupId}.ejbs</groupId>
+                            <artifactId>sola-external</artifactId>
+                        </ejbModule>
+
                         <webModule>
                             <groupId>${project.groupId}.boundary</groupId>
                             <artifactId>sola-web-services</artifactId>
@@ -209,6 +214,12 @@
             <groupId>${project.groupId}.boundary</groupId>
             <artifactId>sola-transfer-objects</artifactId>
             <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}.ejbs</groupId>
+            <artifactId>sola-external</artifactId>
+            <version>${project.version}</version>
+            <type>ejb</type>
         </dependency>
         <dependency>
             <groupId>javax</groupId>
